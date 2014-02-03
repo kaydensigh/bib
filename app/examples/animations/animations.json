@@ -1,0 +1,18 @@
+[
+{
+  "name": "ball",
+  "file": "/images/ball.png",
+  "size": [1, 1],
+  "gridDimensions": [4, 4],
+  "frameCount": 12,
+  "speed": 2
+},
+{
+  "name": "explosion",
+  "file": "/images/explosion.png",
+  "size": [2, 2],
+  "gridDimensions": [4, 5],
+  "frameCount": 18,
+  "speed": 1
+}
+]

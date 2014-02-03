@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="/core/box2d.js"></script>
+    <script type="text/javascript" src="/core/ivank.js"></script>
+    <script type="text/javascript" src="/core/bib.js"></script>
+    <style>
+      html, body, ul {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+
+      .flex {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-flow: column;
+      }
+
+      .item {
+        flex-grow: 1;
+      }
+
+      li {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="flex">
+      <li>
+        <button id="level1">level 1</button>
+        <button id="level2">level 2</button>
+        <button id="level3">level 3</button>
+      </li>
+      <li class="item" id="canvasdiv">
+        <canvas id="c">
+      </li>
+      <li>
+        <button id="fire">fire</button>
+      </li>
+    </ul>
+    <script type="text/javascript" src="sets.js"></script>
+  </body>
+</html>

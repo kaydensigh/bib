@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="angular.js"></script>
+    <script type="text/javascript" src="/core/box2d.js"></script>
+    <script type="text/javascript" src="/core/ivank.js"></script>
+    <script type="text/javascript" src="/core/bib.js"></script>
+  </head>
+  <body ng-app ng-csp>
+    <div id="kinds-list" class="left-bar" ng-controller="KindsList">
+      <button ng-click="load()">load kinds</button>
+      <div ng-repeat="(name, k) in kinds">
+        <a ng-click="addThing(name)">{{name}}</a>
+      </div>
+    </div>
+    <div>
+      <div id="toolbar">
+        <span id="set-controls" ng-controller="SetControls">
+          <button ng-click="load()">load set</button>
+          <button ng-click="save()">save set</button>
+        </span>
+      </div>
+      <div id="canvas-container"><canvas id="c"></div>
+      <div id="params" ng-controller="ThingParams">
+        <div ng-show="attached">
+          {{kindName}}
+          <form ng-submit="pushParams()">
+            position
+            <input type="text" ng-model="params.position.x" size="5">
+            <input type="text" ng-model="params.position.y" size="5">
+            angle
+            <input type="text" ng-model="params.angle" size="5">
+            scale
+            <input type="text" ng-model="params.scale.x" size="5">
+            <input type="text" ng-model="params.scale.y" size="5">
+            velocity
+            <input type="text" ng-model="params.velocity.x" size="5">
+            <input type="text" ng-model="params.velocity.y" size="5">
+            <input type="submit" value="update">
+          </form>
+          <button ng-click="deleteThing()">delete</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="set-editor.js"></script>
+  </body>
+</html>

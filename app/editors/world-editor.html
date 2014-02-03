@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="angular-slider.css">
+    <link rel="stylesheet" type="text/css" href="angular.treeview.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="angular.js"></script>
+    <script type="text/javascript" src="angular-slider.js"></script>
+    <script type="text/javascript" src="angular.treeview.js"></script>
+    <script type="text/javascript" src="/core/box2d.js"></script>
+    <script type="text/javascript" src="/core/ivank.js"></script>
+    <script type="text/javascript" src="/core/bib.js"></script>
+  </head>
+  <body ng-app="worldEditor" ng-csp>
+    <div id="top-level-flex" class="flex-row">
+
+      <div
+        id="items-tree"
+        class="flex-column"
+        ng-controller="ItemsTree"
+        ng-show="show"
+      >
+        <div>
+          <button ng-click="open()">Open</button>
+        </div>
+        <div id="items-tree-columns" class="flex-row">
+          <div id="items-tree-tree">
+            <div>
+              {{currentDirectory}}
+            </div>
+            <div
+              data-angular-treeview="true"
+              data-tree-id="itemsTree"
+              data-tree-model="treeList"
+              data-node-id="id"
+              data-node-label="label"
+              data-node-children="children"
+            ></div>
+          </div>
+          <div id="items-tree-selected">
+            <div>
+              {{itemsTree.currentNode.id}}
+            </div>
+            <div>
+              <pre>{{formatItem(itemsTree.currentNode.item)}}</pre>
+            </div>
+            <div>
+              <button ng-click="edit(itemsTree.currentNode.item)">edit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="kind-editor"
+        class="flex-row"
+        ng-controller="KindEditor"
+        ng-show="show"
+      >
+        <div id="kind-editor-kind">
+          <div>
+            {{descriptor.name}}
+          </div>
+          <div>
+            {{descriptor.animation}}
+          </div>
+          <div>
+            {{descriptor.animationOffset}}
+          </div>
+          <div>
+            {{descriptor.movementType}}
+          </div>
+          <div>
+            {{descriptor.linearDamping}}
+          </div>
+          <div>
+            {{descriptor.angularDamping}}
+          </div>
+          <div>
+            {{descriptor.fixedRotation}}
+          </div>
+          <div>
+            Fixtures:
+          </div>
+          <div ng-repeat="fixture in descriptor.fixtures">
+            <div ng-click="select(fixture)">{{fixture.shapeType}}</div>
+          </div>
+        </div>
+        <div id="kind-editor-fixture-selected">
+          <div>
+            <pre>{{formatFixture(selected)}}</pre>
+          </div>
+          <div>
+            <button ng-click="edit()">edit</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="bib-view" class="flex-column flex-grow">
+        <div id="bib-view-controls" class="flex-row">
+          <div id="zoom-control" ng-controller="ZoomControl">
+            <slider
+              floor="-5"
+              ceiling="5"
+              step="0.1"
+              precision="1"
+              ng-model="zoomLevel"
+              translate="getZoomLevelText"
+            ></slider>
+          </div>
+          <div id="grid-control" ng-controller="GridControl">
+            <input type="number" ng-model="gridSizeX"></input>
+            <input type="number" ng-model="gridSizeY"></input>
+            <button ng-click="increase()">+</button>
+            <button ng-click="decrease()">-</button>
+            <input type="number" ng-model="viewPositionX"></input>
+            <input type="number" ng-model="viewPositionY"></input>
+            <button ng-click="center()">center</button>
+          </div>
+          <div id="pause-control" ng-controller="PauseControl">
+            <button ng-click="toggle()">{{buttonText()}}</button>
+          </div>
+        </div>
+        <div id="canvas-container" class="flex-grow"><canvas id="c"></div>
+      </div>
+
+    </div>
+    <script type="text/javascript" src="world-editor.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+[
+
+{
+  "name": "ball1",
+  "file": "/images/ball.png",
+  "size": [1, 1],
+  "gridDimensions": [4, 4],
+  "frameCount": 1
+},
+{
+  "name": "ball2",
+  "file": "/images/ball.png",
+  "size": [1, 1],
+  "gridDimensions": [4, 4],
+  "frameOffset": 6,
+  "frameCount": 1
+},
+{
+  "name": "box",
+  "file": "/images/box.png",
+  "offset": [0.5, 0]
+}
+]

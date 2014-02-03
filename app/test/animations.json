@@ -1,0 +1,27 @@
+[
+{
+  "name": "box",
+  "file": "/images/box.png"
+},
+{
+  "name": "small",
+  "file": "/images/small.png"
+},
+{
+  "name": "big",
+  "file": "/images/big.png"
+},
+{
+  "name": "ball",
+  "file": "/images/ball.png",
+  "gridDimensions": [4, 4],
+  "frameCount": 14,
+  "speed": 2,
+  "blendMode": "add"
+},
+{
+  "name": "wallpaper",
+  "file": "/images/forest.jpg",
+  "size": [32, 18]
+}
+]

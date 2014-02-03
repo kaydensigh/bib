@@ -1,0 +1,43 @@
+[
+{
+  "name": "level1",
+  "things": [
+    {
+      "kind": "block",
+      "params": {
+        "position": [-3,-1.8],
+        "angle": 0,
+        "scale": [0.4,3],
+        "velocity": [0,0]
+      }
+    },
+    {
+      "kind": "block",
+      "params": {
+        "position": [-8,-1.8],
+        "angle": 0,
+        "scale": [0.4,3],
+        "velocity": [0,0]
+      }
+    },
+    {
+      "kind": "block",
+      "params": {
+        "position": [-5.5,-3.6],
+        "angle": 0,
+        "scale": [6,0.4],
+        "velocity": [0,0]
+      }
+    },
+    {
+      "kind": "ham",
+      "params": {
+        "position": [-5.5,-5.2],
+        "angle": 0,
+        "scale": [1,1],
+        "velocity": [0,0]
+      }
+    }
+  ]
+}
+]

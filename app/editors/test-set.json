@@ -1,0 +1,38 @@
+[
+  {
+    "kind": "box",
+    "params": {
+      "position": [-0.3,0.47],
+      "angle": 1,
+      "scale": [2,2],
+      "velocity": [0,0]
+    }
+  },
+  {
+    "kind": "ball",
+    "params": {
+      "position": [-2.23,-2.93],
+      "angle": 0,
+      "scale": [1,1],
+      "velocity": [0,0]
+    }
+  },
+  {
+    "kind": "wall",
+    "params": {
+      "position": [2.01,-2.01],
+      "angle": 0,
+      "scale": [1,1],
+      "velocity": [0,0]
+    }
+  },
+  {
+    "kind": "small",
+    "params": {
+      "position": [0.24,-4.63],
+      "angle": 0,
+      "scale": [1,1],
+      "velocity": [0,0]
+    }
+  }
+]

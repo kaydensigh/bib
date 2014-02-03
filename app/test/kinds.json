@@ -1,0 +1,76 @@
+[
+{
+  "name": "ball",
+  "animation": "ball",
+  "fixtures": [{
+    "shapeType": "circle",
+    "shapeData": 0.47,
+    "properties": {
+      "restitution": 0.9
+    }
+  }],
+  "angularDamping": 0.1
+},
+{
+  "name": "bigball",
+  "animation": "big",
+  "fixtures": [{
+    "shapeType": "circle",
+    "shapeData": 0.4,
+    "collisionFilter": {
+      "onlyCollidesWith": ["wall"]
+    }
+  }]
+},
+{
+  "name": "wall",
+  "animation": "box",
+  "movementType": "static",
+  "fixtures": [{
+    "collisionFilter": {
+      "collisionCategories": ["wall"]
+    }
+  }]
+},
+{
+  "name": "small",
+  "animation": "small",
+  "fixtures": [{
+    "shapeType": "circle",
+    "shapeData": 0.5,
+    "properties": {
+      "restitution": 0.8
+    }
+  }]
+},
+{
+  "name": "force",
+  "animation": "box",
+  "fixtures": [{
+    "properties": {
+      "restitution": 0.8,
+      "density": 50
+    }
+  }],
+  "linearDamping": 10
+},
+{
+  "name": "box",
+  "animation": "box",
+  "fixtures": [
+    {
+      "shapeType": "loop",
+      "shapeData": [[-0.5, -0.5],
+                    [0.5, -0.5],
+                    [0.5, 0.5],
+                    [-0.5, 0.5]]
+    },
+    {
+      "shapeType": "box",
+      "collisionFilter": {
+        "collisionCategories": []
+      }
+    }
+  ]
+}
+]

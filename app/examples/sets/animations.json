@@ -1,0 +1,25 @@
+[
+{
+  "name": "chicken",
+  "file": "/images/chicken.png",
+  "size": [1.2,1]
+},
+{
+  "name": "block",
+  "file": "/images/block.jpg"
+},
+{
+  "name": "ham",
+  "file": "/images/ham.png",
+  "size": [1.7, 1.2]
+},
+{
+  "name": "desert",
+  "file": "/images/desert.jpg",
+  "size": [10.24, 4.5]
+},
+{
+  "name": "no-image",
+  "file": "/images/no-image.png"
+}
+]

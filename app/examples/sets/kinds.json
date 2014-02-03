@@ -1,0 +1,49 @@
+[
+{
+  "name": "chicken",
+  "animation": "chicken",
+  "fixtures": [
+    {
+      "shapeType": "circle",
+      "properties": {
+        "density": 100,
+        "friction": 0.2,
+        "restitution": 0.9
+      }
+    }
+  ]
+},
+{
+  "name": "wall",
+  "animation": "block",
+  "fixtures": [{}],
+  "movementType": "static"
+},
+{
+  "name": "block",
+  "fixtures": [{}],
+  "animation": "block"
+},
+{
+  "name": "ham",
+  "animation": "ham",
+  "fixtures": [
+    {
+      "shapeType": "polygon",
+      "shapeData": [[0, -1.155],
+                    [1, 0.5775],
+                    [-1, 0.5775]]
+    }
+  ]
+},
+{
+  "name": "background",
+  "animation": "desert",
+  "movementType": "static"
+},
+{
+  "name": "no-image",
+  "animation": "no-image",
+  "movementType": "static"
+}
+]

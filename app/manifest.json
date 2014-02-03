@@ -1,0 +1,18 @@
+{
+  "name": "BIB",
+  "description": "Box2D made easier.",
+  "version": "0.1",
+  "offline_enabled": true,
+  "app": {
+    "background": {
+      "scripts": [
+        "background.js"
+      ]
+    }
+  },
+  "icons": { "16": "images/icon-16.png", "128": "images/icon-128.png" },
+  "permissions": [
+    {"fileSystem": ["write", "directory", "retainEntries"]},
+    "storage"
+  ]
+}

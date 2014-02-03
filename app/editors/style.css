@@ -1,0 +1,48 @@
+html, body, #top-level-flex {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.flex-row {
+  padding: 0;
+  display: flex;
+  flex-flow: row;
+}
+
+.flex-column {
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+#bib-view-controls {
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+#zoom-control {
+  width: 400px;
+}
+
+input {
+  width: 2em;
+}
+
+#canvas-container {
+  margin: 2px;
+  aspect-ratio: 1;
+}
+
+#c {
+  border: solid 1px;
+}

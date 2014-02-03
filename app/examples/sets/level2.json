@@ -1,0 +1,61 @@
+[
+{
+  "name": "level2",
+  "things": [
+    {
+      "kind": "ham",
+      "params": {
+        "position": [-1.43,-0.56],
+        "angle": 0,
+        "scale": [1,1],
+        "velocity": [0,0]
+      }
+    },
+    {
+      "kind": "ham",
+      "params": {
+        "position": [-3.28,-0.56],
+        "angle": 0,
+        "scale": [1,1],
+        "velocity": [0,0]
+      }
+    },
+    {
+      "kind": "ham",
+      "params": {
+        "position": [-2.3,-2.2],
+        "angle": 0,
+        "scale": [1,1],
+        "velocity": [0,0]
+      }
+    },
+    {
+      "kind": "ham",
+      "params": {
+        "position": [-5.47,-0.66],
+        "angle": 0,
+        "scale": [1,1],
+        "velocity": [0,0]
+      }
+    },
+    {
+      "kind": "ham",
+      "params": {
+        "position": [-4.36,-2.2],
+        "angle": 0,
+        "scale": [1,1],
+        "velocity": [0,0]
+      }
+    },
+    {
+      "kind": "ham",
+      "params": {
+        "position": [-3.34,-3.83],
+        "angle": 0,
+        "scale": [1,1],
+        "velocity": [0,0]
+      }
+    }
+  ]
+}
+]
