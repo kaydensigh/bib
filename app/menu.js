@@ -70,12 +70,6 @@ document.getElementById('world-editor').onclick = function() {
     'height': 600,
   });
 };
-document.getElementById('set-editor').onclick = function() {
-  chrome.app.window.create('/editors/set-editor.html', {
-    'width': 800,
-    'height': 600,
-  });
-};
 document.getElementById('test').onclick = function() {
   chrome.app.window.create('/test/test.html', {
     'width': 800,
