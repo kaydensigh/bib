@@ -70,7 +70,10 @@ AnimatedBitmap.prototype.setInstant = function (instant)
   }
 
   // Bound instant to [0, 1).
-  instant = (instant + 1) % 1;
+  instant = instant % 1;
+  if (instant < 0) {
+    instant += 1;
+  }
 
   var currentFrame = (this.numChildren * this.instant) | 0;
   var newFrame = (this.numChildren * instant) | 0;
@@ -88,7 +91,7 @@ AnimatedBitmap.prototype.getFrame = function (frame) {
   return (this.numChildren * this.instant) | 0;
 }
 AnimatedBitmap.prototype.setFrame = function (frame) {
-  this.setInstant((frame / this.numChildren) % 1);
+  this.setInstant(frame / this.numChildren);
 }
 
 /**
