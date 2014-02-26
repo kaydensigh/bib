@@ -10,9 +10,9 @@ var stage2;
 function Start()
 {
 
-  stage1 = new Stage("c1");
+  stage1 = new Stage('c1');
 
-  var bd = new BitmapData("/images/chicken.png");
+  var bd = new BitmapData('/images/chicken.png');
 
   for(var i=0; i<10; i++) {
     var b = new Bitmap(bd);
@@ -20,7 +20,7 @@ function Start()
   }
   stage1.addEventListener(Event.ENTER_FRAME, onEF);
 /*
-  stage2 = new Stage("c2");
+  stage2 = new Stage('c2');
   for(var i=0; i<10; i++) {
     var b = new Bitmap(bd);
     stage2.addChild(b);

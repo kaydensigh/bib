@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 document.getElementById('basic').onclick = function() {
   chrome.app.window.create('/examples/basic/basic.html', {
